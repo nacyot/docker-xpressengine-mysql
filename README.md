@@ -2,13 +2,13 @@
 
 This is Dockerfile for building [xpressengine](https://github.com/rauhryan/xpressengine) application image.
 
-## Build
+## Building Dockerfile
 
 1. Clone this repository.
 
 ```sh
 $ git clone docker-xpressengine
-$ cd docker-docker-xpressengine
+$ cd docker-xpressengine
 ```
 
 1. Build Dockerfile.
@@ -23,10 +23,23 @@ $ docker build -t nacyot/xpressengine .
 $ docker run -d -p <PUBLIC_PORT>:80 nacyot/xpressengine
 ```
 
-Replace `<PUBLIC_PORT>` with the number. You can access your huboard
-application on `http://127.0.0.1:<PUBLIC_PORT>`
+Replace `<PUBLIC_PORT>` with the number. You can access your XpressEngine
+application on `http://127.0.0.1:<PUBLIC_PORT>/xe`
 
-## Setup Nginx Proxy
+# Installing XpressEngine
+
+`http://127.0.0.1:<PUBLIC_PORT>/xe`
+
+## Setup Mysql
+
+```
+ID : xpressengine
+Password : xpressengine
+Database : xpressengine
+```
+
+## Setting up Nginx Proxy
+
 ```nginx
 upstream xpressengine_server {
   server 127.0.0.1:<PUBILC_PORT>;
