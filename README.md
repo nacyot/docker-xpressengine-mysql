@@ -9,20 +9,20 @@ image. This image has Mysql sever and can be used without another database.
 1. Clone this repository.
 
 ```sh
-$ git clone docker-xpressengine
-$ cd docker-xpressengine
+$ git clone https://github.com/nacyot/docker-xpressengine-mysql.git
+$ cd docker-xpressengine-mysql
 ```
 
 1. Building image from Dockerfile.
 
 ```sh
-$ docker build -t nacyot/xpressengine .
+$ docker build -t nacyot/xpressengine-mysql .
 ```
 
 # Starting Server
 
 ```
-$ docker run -d -p <PUBLIC_PORT>:80 nacyot/xpressengine
+$ docker run -d -p <PUBLIC_PORT>:80 nacyot/xpressengine-mysql
 ```
 
 Replace `<PUBLIC_PORT>` with the number. You can access your XpressEngine
