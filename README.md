@@ -1,4 +1,4 @@
-# docker-xpressengine
+# docker-xpressengine-mysql
 
 This is Dockerfile for building
 [xpressengine](https://github.com/rauhryan/xpressengine) application
